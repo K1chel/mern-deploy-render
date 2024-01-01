@@ -5,7 +5,7 @@ import cors from "cors";
 
 import userRoutes from "./routes/user.js";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
 const app = express();
