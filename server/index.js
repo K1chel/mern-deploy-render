@@ -20,6 +20,8 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => res.send("Hello from Express!"));
+
 mongoose
   .connect(MONGO_URI)
   .then(() => console.log("MongoDB connected"))
